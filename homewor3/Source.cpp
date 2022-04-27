@@ -28,4 +28,9 @@ Student Student::operator=(int newscore) {
     this->score = newscore;
     return *this;
 }
-
+Student Student::operator=(const Student& student)
+{
+    this->name = student.name;
+    this->group = student.group;
+    this->score = student.score;
+}

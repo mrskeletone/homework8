@@ -12,6 +12,9 @@ public:
 	friend std::ostream& operator<< (std::ostream& out, const Student  &student);
 	friend std::istream& operator>> (std::istream& in, Student& student);
 	Student operator=(int newscore);
+	Student operator=(const Student& student);
+	
+
 private:
 	string name, group;
 	int  score;
